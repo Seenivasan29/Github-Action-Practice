@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - 'release/**'        # any branch starting with release/  (** = wildcard)
-    paths:
+    paths-ignore:
       - 'sample-app/**'     # only run if something in the app folder changed
       - '**.js'             # ...or any JavaScript file, anywhere in the repo
       # NOTE: paths are matched from the REPO ROOT. Our app lives in
